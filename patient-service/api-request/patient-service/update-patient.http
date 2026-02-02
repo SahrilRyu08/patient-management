@@ -1,0 +1,69 @@
+### PUT request update for a patients
+### valid
+PUT http://localhost:4000/api/patients/d1d5df74-e5dd-4add-9731-d784177319b0
+Content-Type: application/json
+
+{
+  "name": "Andi Pratama update",
+  "email": "andi.pratama@mail.com",
+  "address": "Kab. Bandung",
+  "dateOfBirth": "1995-03-21",
+  "registeredDate": "2024-01-10"
+}
+
+
+###
+### POST request for a patients empty name
+POST http://localhost:4000/api/patients
+Content-Type: application/json
+
+{
+  "name": "",
+  "email": "andi.pratama@mail.com",
+  "address": "Bandung",
+  "dateOfBirth": "1995-03-21",
+  "registeredDate": "2024-01-10"
+}
+###
+
+### POST request for a patient empty email
+POST http://localhost:4000/api/patients
+Content-Type: application/json
+
+{
+  "name": "Andi",
+  "email": "",
+  "address": "Bandung",
+  "dateOfBirth": "1995-03-21",
+  "registeredDate": "2024-01-10"
+}
+
+###
+
+### POST request for a patient with date of birth is empty
+POST http://localhost:4000/api/patients
+Content-Type: application/json
+
+{
+  "name": "Andi",
+  "email": "andi@mail.com",
+  "address": "Bandung",
+  "dateOfBirth": "",
+  "registeredDate": "2024-01-10"
+}
+
+###
+
+### POST request for a patient with registered date is empty
+POST http://localhost:4000/api/patients
+Content-Type: application/json
+
+{
+  "name": "Andi",
+  "email": "andi@mail.com",
+  "address": "Bandung",
+  "dateOfBirth": "1999-01-10",
+  "registeredDate": ""
+}
+
+###
